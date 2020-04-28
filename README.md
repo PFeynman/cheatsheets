@@ -30,7 +30,7 @@ If you want to add a snippet to the existing cheatsheets, go to the JSON file of
 
 You can also add new snippets in the existing groups too. 
 
-**If you don't speak English or Spanish, fill the title and description of the language you know and we will translate it for you. **
+**If you don't speak English or Spanish, fill the title and description of the language you know and we will translate it for you.**
 
 ### Adding a new cheatsheet
 
@@ -43,7 +43,7 @@ If, on the other hand, you prefer to add new cheatsheets, add a new JSON file, n
 }
 ```
 
-## Collaborators
+## Contributors
 
 -  [Alberto Sola (pirobtumen)](https://github.com/pirobtumen)
 -  Your name, GitHub username and link (optional) 
