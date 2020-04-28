@@ -2,8 +2,8 @@
 
 Community-driven cheatsheets and documentation for developers. Quickly find the commands you need for programming.
 
-- [Pirobits Cheatsheets (English)](https://pirobits.com/cheatcheets)
-- [Pirobits Cheatsheets (Español)](https://pirobits.com/es/cheatcheets)
+- [Pirobits Cheatsheets (English)](https://pirobits.com/cheatsheets)
+- [Pirobits Cheatsheets (Español)](https://pirobits.com/es/cheatsheets)
 
 ## How to contribute
 
