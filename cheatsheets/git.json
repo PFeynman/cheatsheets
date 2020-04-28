@@ -1,0 +1,89 @@
+{
+  "category": "git",
+  "groups": [
+    {
+      "title_es": "Sincronización del repositorio",
+      "title_en": "Project sync",
+      "snippets": [
+        {
+          "commands": ["git pull <origin> <branch>"],
+          "usages": ["git pull origin master", "git pull origin my-branch"],
+          "description_es": "Trae los cambios del servidor al proyecto local.",
+          "description_en": "Pull remote changes to your local project."
+        },
+        {
+          "commands": ["git push <origin> <branch>"],
+          "usages": ["git push origin master", "git push origin my-branch"],
+          "description_es": "Sube los cambios locales al servidor de origen.",
+          "description_en": "Push your local changes to the origin server."
+        },
+        {
+          "commands": ["git fetch"],
+          "usages": [],
+          "description_es": "Sincroniza los commits y ramas del servidor al repositorio local.",
+          "description_en": "Sync commits and branches from the remote to the local repository."
+        }
+      ]
+    },
+    {
+      "title_es": "Commitear cambios",
+      "title_en": "Commit changes",
+      "snippets": [
+        {
+          "commands": ["git add <files>"],
+          "usages": ["git add main.py", "git add myFolder", "git add ."],
+          "description_es": "Añade los archivos al área de staging para el siguiente commit.",
+          "description_en": "Add files to the staging area for the next commit."
+        },
+        {
+          "commands": ["git status"],
+          "usages": [],
+          "description_es": "Muestra los cambios en el repositorio.",
+          "description_en": "Show the repository changes."
+        },
+        {
+          "commands": ["git commit -m <message>"],
+          "usages": ["git commit -m 'My new feature'"],
+          "description_es": "Crea un nuevo commit para los archivos añadidos al area de staging.",
+          "description_en": ""
+        }
+      ]
+    },
+    {
+      "title_es": "Gestión de ramas",
+      "title_en": "Branch management",
+      "snippets": [
+        {
+          "commands": ["git checkout [-b] <branch>"],
+          "usages": ["git checkout master", "git checkout -b new-branch"],
+          "description_es": "Este comando te permite moverte entre ramas. Puedes añadir -b para crear la rama.",
+          "description_en": "This command let you change to a different branch. You can add -b to create the branch."
+        }
+      ]
+    },
+    {
+      "title_es": "Eliminar cambios y deshacer commits",
+      "title_en": "Reset changes and undo commits",
+      "snippets": [
+        {
+          "commands": ["git checkout ."],
+          "usages": [],
+          "description_es": "Deshace los cambios que no hayan sido commiteados.",
+          "description_en": "Undo uncommited changes."
+        },
+        {
+          "commands": ["git reset HEAD~<N>"],
+          "usages": ["git reset HEAD~1", "git reset HEAD~1 --hard"],
+          "description_es": "Deshace los últimos N commits. Por defecto se mantienen los cambios, pero puedes eliminarlos añadiendo --hard.",
+          "description_en": "Undo last N commits. By default the changes are kept, but you can remove them adding --hard."
+        },
+        {
+          "commands": ["git branch -D <branch>"],
+          "usages": ["git branch -D my-branch"],
+          "description_es": "Elimina una rama local.",
+          "description_en": "Removes a local branch."
+        }
+      ]
+    }
+  ]
+}

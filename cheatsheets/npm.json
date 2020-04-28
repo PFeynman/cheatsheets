@@ -1,0 +1,45 @@
+{
+  "category": "npm",
+  "groups": [
+    {
+      "title_es": "Manejo de dependencias",
+      "title_en": "Dependency management",
+      "snippets": [
+        {
+          "commands": ["npm init"],
+          "description_es": "Crea el archivo package.json del proyecto.",
+          "description_en": "Create a package.json project file.",
+          "usages": []
+        },
+        {
+          "commands": [
+            "npm install",
+            "npm install <package>",
+            "npm i",
+            "npm ci"
+          ],
+          "description_es": "Instala o actualiza paquetes en el proyecto.",
+          "description_en": "Innstalls or updates project packages.",
+          "usages": []
+        }
+      ]
+    },
+    {
+      "title_es": "Binarios",
+      "title_en": "Binaries",
+      "snippets": [
+        {
+          "commands": ["npx <binary>"],
+          "description_es": "Ejecuta comandos de npm fuera de la sección scripts.",
+          "description_en": "Run npm binaries outside scripts section.",
+          "usages": [
+            "npm i tsc ts-node jest",
+            "npx tsc <params>",
+            "npx jest <params>",
+            "npx ts-node <params>"
+          ]
+        }
+      ]
+    }
+  ]
+}

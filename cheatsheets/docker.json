@@ -1,0 +1,99 @@
+{
+  "category": "docker",
+  "groups": [
+    {
+      "title_es": "Sincronización",
+      "title_en": "Sync",
+      "snippets": [
+        {
+          "commands": ["docker pull <image>"],
+          "usages": [
+            "docker pull node",
+            "docker pull python:3.7",
+            "docker pull nginx:1.16-alpine",
+            "docker pull some-repo.com/pirobits/api:1.5"
+          ],
+          "description_es": "Descarga una imagen de docker en la máquina local.",
+          "description_en": "Pull a remote docker image to the local machine."
+        },
+        {
+          "commands": ["docker push <image>"],
+          "usages": [
+            "docker push some-repo.com/pirobits/api:1.5",
+            "docker push pirobits/api:1.5"
+          ],
+          "description_es": "Sube una imagen local al repositorio.",
+          "description_en": "Push a local image to the repository."
+        }
+      ]
+    },
+    {
+      "title_es": "Construir imágenes",
+      "title_en": "Build images",
+      "snippets": [
+        {
+          "commands": ["docker build [-f path/to/dockerfile] <folder>"],
+          "usages": [
+            "docker build .",
+            "docker build -f docker/nginx.Dockerfile ."
+          ],
+          "description_es": "Construye una imagen de docker.",
+          "description_en": "Build a docker image."
+        }
+      ]
+    },
+    {
+      "title_es": "Estado de los contenedores",
+      "title_en": "Container status",
+      "snippets": [
+        {
+          "commands": ["docker ps"],
+          "usages": [],
+          "description_es": "Muestra el estado de los contenedores docker en ejecución.",
+          "description_en": "Show the running containers status."
+        }
+      ]
+    },
+    {
+      "title_es": "Interacción con contenedores",
+      "title_en": "Container interaction",
+      "snippets": [
+        {
+          "commands": [
+            "docker run [--rm] [-d] [-it] [-p <host_port:container_port>] <image>"
+          ],
+          "usages": [
+            "docker run --rm -it alpine",
+            "docker run -d -p 8080:80 nginx"
+          ],
+          "description_es": "Ejecuta una imagen de docker. Opciones: --rm borra automáticamente el contenedor generado, -d ejecuta el contenedor en segundo plano, -it permite que la terminal sea interativa, -p nos permite conectar un puerto del host con uno del contenedor.",
+          "description_en": "Run a docker image. Options: --rm removes docker container, -d runs detached container, -it interactive shell, -p binds a host port into a container port."
+        },
+        {
+          "commands": ["docker exec [-it] <container> <command>"],
+          "usages": ["docker exec -it my-python-api-container sh"],
+          "description_es": "Ejecuta un comando dentro de un contenedor de docker.",
+          "description_en": "Runs a command inside a docker container."
+        }
+      ]
+    },
+    {
+      "title_es": "Limpieza",
+      "title_en": "Clean up",
+      "snippets": [
+        {
+          "commands": ["docker rmi <image>"],
+          "usages": ["docker rmi alpine", "docker rmi node:12.13"],
+          "description_es": "Elimina una imagen de docker local.",
+          "description_en": "Remove a local docker image."
+        },
+        {
+          "commands": ["docker container rm <container>"],
+          "usages": ["docker container rm my-node-containers"],
+          "description_es": "Elimina un contenedor de docker local.",
+          "description_en": "Removes a local docker conntainer"
+        }
+      ]
+    }
+  ]
+}

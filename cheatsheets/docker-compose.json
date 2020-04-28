@@ -1,0 +1,62 @@
+{
+  "category": "docker-compose",
+  "groups": [
+    {
+      "title_es": "Construir y ejecutar imágenes",
+      "title_en": "Build and run images",
+      "snippets": [
+        {
+          "commands": ["docker-compose [-f /path/to/docker-compose] build"],
+          "usages": [],
+          "description_es": "Construye las imágenes de docker especificadas en el archivo docker-compose.",
+          "description_en": "Builds the docker images set in the docker-compose file."
+        },
+        {
+          "commands": [
+            "docker-compose [-f /path/to/docker-compose] up [-d] [--build] [containers]"
+          ],
+          "usages": [],
+          "description_es": "Levanta los contenedores especificados. Por defecto los lanza todos.",
+          "description_en": "Run the containers. By default runs them all."
+        },
+        {
+          "commands": [
+            "docker-compose [-f /path/to/docker-compose] stop [containers]",
+            "docker-compose [-f /path/to/docker-compose] down [containers]"
+          ],
+          "usages": [
+            "docker-compose stop",
+            "docker-compose stop postgresql",
+            "docker-compose stop elastic gitlab api"
+          ],
+          "description_es": "El comando stop para los contenedores. El comando down para los contenedores, pero además borra los recursos asociados.",
+          "description_en": "The stop command stops the containers. The down command stops the containers and removes all the resources."
+        }
+      ]
+    },
+    {
+      "title_es": "Estado de los contenedores",
+      "title_en": "Container status",
+      "snippets": [
+        {
+          "commands": ["docker-compose ps"],
+          "usages": [],
+          "description_es": "Muestra el estado de los contenedores docker en ejecución.",
+          "description_en": "Show the running containers status."
+        }
+      ]
+    },
+    {
+      "title_es": "Ejecutar comandos dentro de un contenedor",
+      "title_en": "Run command inside container",
+      "snippets": [
+        {
+          "commands": ["docker-compose exec <container> <command>"],
+          "usages": ["docker-compose exec postgres sh"],
+          "description_es": "Ejecuta un comando dentro de un contenedor de docker.",
+          "description_en": "Runs a command inside a docker container."
+        }
+      ]
+    }
+  ]
+}
